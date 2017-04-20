@@ -43,10 +43,10 @@ describe('list-git-branches', function() {
           cb(err);
           return;
         }
-
         assert(names.indexOf('foo') !== -1);
         assert(names.indexOf('bar') !== -1);
         assert(names.indexOf('baz') !== -1);
+        assert(names.indexOf('master') !== -1);
         cb();
       });
     });
@@ -60,6 +60,7 @@ describe('list-git-branches', function() {
       assert(names.indexOf('foo') !== -1);
       assert(names.indexOf('bar') !== -1);
       assert(names.indexOf('baz') !== -1);
+      assert(names.indexOf('master') !== -1);
     });
   });
 });

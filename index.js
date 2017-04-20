@@ -34,10 +34,8 @@ function parseBranches(str) {
   var lines = str.trim().split(os.EOL);
   var res = [];
   for (var i = 0; i < lines.length; i++) {
-    var line = lines[i].trim();
-    if (line && !/\*/.test(line)) {
-      res.push(line.split('/').pop());
-    }
+    var line = lines[i].trim().replace(/^\*\s*/, '');
+    res.push(line.split('/').pop());
   }
   return res;
 }
