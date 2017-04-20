@@ -14,25 +14,48 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=4"
+    "node": ">=0.12.0"
   },
   "scripts": {
     "test": "mocha"
   },
+  "dependencies": {
+    "extend-shallow": "^2.0.1"
+  },
+  "devDependencies": {
+    "gfc": "^1.0.0",
+    "gulp-format-md": "^0.1.12",
+    "mocha": "^3.2.0",
+    "rimraf": "^2.6.1"
+  },
   "keywords": [
     "branches",
-    "generategenerator",
     "git",
     "list"
   ],
-  "dependencies": {
-    "extend-shallow": "^2.0.1",
-    "list-git-remotes": "^1.0.0"
-  },
-  "devDependencies": {
-    "gitty": "^3.6.0",
-    "mkdirp": "^0.5.1",
-    "mocha": "^3.2.0",
-    "rimraf": "^2.6.1"
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "gfc",
+        "git-branch",
+        "git-config-path",
+        "git-user-email",
+        "git-user-name",
+        "git-username",
+        "git-add-remote",
+        "list-git-remotes"
+      ]
+    },
+    "lint": {
+      "reflinks": true
+    }
   }
 }
