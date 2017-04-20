@@ -1,7 +1,7 @@
 {
   "name": "list-git-branches",
   "description": "List the branches for a git repository.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/list-git-branches",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/list-git-branches",
