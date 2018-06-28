@@ -20,6 +20,7 @@
     "test": "mocha"
   },
   "dependencies": {
+    "bluebird": "^3.5.1",
     "extend-shallow": "^2.0.1"
   },
   "devDependencies": {
